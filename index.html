@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jalons — Vos droits sociaux, enfin clairs</title>
+  <meta name="description" content="Jalons analyse votre situation et vous dit à quoi vous pouvez avoir droit, comment l'obtenir et comment contester un refus. Document personnalisé, à partir de 14 €." />
+
+  <!-- Seule dépendance externe : Google Fonts (Public Sans, humaniste et très lisible) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/jalons.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+
+  <!-- =================================================================
+       EN-TÊTE STICKY
+       ================================================================= -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#" aria-label="Jalons, accueil">
+        <span class="mark" aria-hidden="true">J</span>
+        <span>Jalons</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span class="bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="label">Menu</span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+        <ul class="nav-list">
+          <li><a href="#comment">Comment ça marche</a></li>
+          <li><a href="#tarifs">Tarifs</a></li>
+          <li><a href="#faq">Questions fréquentes</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a class="btn btn--primary" href="https://jalons-diagnostic.netlify.app">Mon diagnostic</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+
+    <!-- ===============================================================
+         HÉROS
+         =============================================================== -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-copy">
+          <h1>Vos droits sociaux, enfin clairs.</h1>
+          <p class="lead">
+            Jalons analyse votre situation et vous dit exactement ce à quoi
+            vous pouvez avoir droit, comment l'obtenir, et comment contester
+            si on vous le refuse.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn--primary btn--lg" href="https://jalons-diagnostic.netlify.app">Commencer mon diagnostic →</a>
+          </div>
+
+          <ul class="hero-reassure">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4 10-10"/></svg> Document 100&nbsp;% personnalisé</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4 10-10"/></svg> Réglementation 2026</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4 10-10"/></svg> Accès immédiat</li>
+          </ul>
+        </div>
+
+        <!-- Photo de garde. object-position cadre sur la personne et le courrier.
+             Pour changer la photo : remplacez le fichier images/hero-courrier.png
+             ou la valeur de src ci-dessous (gardez un texte alt descriptif). -->
+        <div class="hero-media">
+          <div class="hero-photo-wrap">
+            <div class="img-frame hero-photo">
+              <img src="images/hero-courrier.png" alt="Une femme lit un courrier de l'administration française, un avis d'impôt, à la table de sa cuisine" />
+            </div>
+
+            <div class="float-chip float-chip--1">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span>
+              Droit identifié
+            </div>
+            <div class="float-chip float-chip--2">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M17 6.5C17 4.6 14.8 4 12 4S7 4.6 7 7s2.5 3 5 3.5 5 1.3 5 3.5-2.2 3-5 3-5-.7-5-2.5"/></svg></span>
+              Montant estimé
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===============================================================
+         PROBLÈME (empathie)
+         =============================================================== -->
+    <section class="section--gray" aria-labelledby="probleme-titre">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow">Vous n'êtes pas seul</p>
+          <h2 id="probleme-titre">Des milliards d'euros de droits ne sont jamais réclamés.</h2>
+          <p class="lead">
+            Chaque année en France, beaucoup d'aides ne sont pas demandées.
+            Pas par mauvaise volonté&nbsp;: par manque d'information, par
+            épuisement, et parce que c'est trop compliqué.
+          </p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card pain">
+            <span class="q" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v5h5"/><path d="M9 16h6"/></svg></span>
+            <p>« Je ne comprends pas ma notification. »</p>
+          </article>
+          <article class="card pain">
+            <span class="q" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <p>« J'attends une réponse depuis des mois. »</p>
+          </article>
+          <article class="card pain">
+            <span class="q" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15 9l-6 6M9 9l6 6"/></svg></span>
+            <p>« Mon dossier a été refusé. »</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===============================================================
+         COMMENT ÇA MARCHE
+         =============================================================== -->
+    <section id="comment" aria-labelledby="comment-titre">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow">Comment ça marche</p>
+          <h2 id="comment-titre">Trois étapes simples, en quelques minutes.</h2>
+        </div>
+
+        <ol class="grid grid-3">
+          <li class="card">
+            <span class="step-num" aria-hidden="true">1</span>
+            <h3>Répondez à quelques questions</h3>
+            <p>Sur votre situation et votre famille. Environ 3 minutes, à votre rythme, sans aucun document à préparer.</p>
+          </li>
+          <li class="card">
+            <span class="step-num" aria-hidden="true">2</span>
+            <h3>Jalons analyse votre situation</h3>
+            <p>En s'appuyant sur les règles des aides sociales en vigueur, pour repérer ce qui vous concerne vraiment.</p>
+          </li>
+          <li class="card">
+            <span class="step-num" aria-hidden="true">3</span>
+            <h3>Recevez votre document personnalisé</h3>
+            <p>Vos droits classés par priorité, les montants estimés, les démarches dans l'ordre et les courriers à envoyer.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===============================================================
+         LES 6 DOMAINES COUVERTS
+         =============================================================== -->
+    <section class="section--gray" aria-labelledby="domaines-titre">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow">Ce que Jalons couvre</p>
+          <h2 id="domaines-titre">Six domaines, expliqués simplement.</h2>
+        </div>
+
+        <div class="grid grid-6">
+          <article class="card domain">
+            <span class="icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg></span>
+            <div><h3>Handicap (MDPH)</h3><p>AAH, PCH, reconnaissance, scolarité.</p></div>
+          </article>
+          <article class="card domain">
+            <span class="icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M17 6.5C17 4.6 14.8 4 12 4S7 4.6 7 7s2.5 3 5 3.5 5 1.3 5 3.5-2.2 3-5 3-5-.7-5-2.5"/></svg></span>
+            <div><h3>Revenus</h3><p>RSA, prime d'activité, aides en cas de précarité.</p></div>
+          </article>
+          <article class="card domain">
+            <span class="icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-6 8 6"/><path d="M6 10v9h12v-9"/><path d="M10 19v-5h4v5"/></svg></span>
+            <div><h3>Logement</h3><p>APL, aides au loyer, situations d'urgence.</p></div>
+          </article>
+          <article class="card domain">
+            <span class="icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21C7 17 4 14 4 9.5 4 7 6 5 8.5 5c1.6 0 3 .9 3.5 2 .5-1.1 1.9-2 3.5-2C18 5 20 7 20 9.5 20 14 17 17 12 21z"/></svg></span>
+            <div><h3>Maladie</h3><p>Arrêt de travail, indemnités, invalidité.</p></div>
+          </article>
+          <article class="card domain">
+            <span class="icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0 1 12 0"/><path d="M16 7a3 3 0 0 1 0 6"/><path d="M18 20a6 6 0 0 0-3-5.2"/></svg></span>
+            <div><h3>Aidants</h3><p>Congé proche aidant, droits et soutiens.</p></div>
+          </article>
+          <article class="card domain">
+            <span class="icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M5 21a7 7 0 0 1 14 0"/><path d="M18 4l1.5 1.5"/></svg></span>
+            <div><h3>Retraite &amp; seniors</h3><p>Minimum vieillesse (ASPA), APA, aides au grand âge.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===============================================================
+         TARIFS (section centrale)
+         =============================================================== -->
+    <section id="tarifs" aria-labelledby="tarifs-titre">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow">Tarifs</p>
+          <h2 id="tarifs-titre">Choisissez l'accompagnement qu'il vous faut.</h2>
+          <p class="lead">Un paiement unique, sans abonnement. Vous choisissez selon là où vous en êtes.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Palier 1 -->
+          <article class="plan" aria-labelledby="plan1-titre">
+            <p class="plan-name" id="plan1-titre">Je comprends ma situation</p>
+            <p class="plan-price">14&#8239;<span class="cur">€</span></p>
+            <p class="plan-tag">Pour y voir clair, sans plus attendre.</p>
+            <ul class="checks">
+              <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span><span>Un résumé clair et personnalisé de votre situation</span></li>
+              <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span><span>Vos droits classés par priorité, avec montants estimés</span></li>
+              <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span><span>3 actions prioritaires à faire en premier</span></li>
+              <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span><span>5 pièges courants à éviter</span></li>
+              <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span><span>Les alertes et les délais à ne pas manquer</span></li>
+            </ul>
+            <a class="btn btn--outline btn--block" href="https://jalons-diagnostic.netlify.app?offre=1">Choisir cette offre</a>
+          </article>
+
+          <!-- Palier 2 — recommandé -->
+          <article class="plan plan--featured" aria-labelledby="plan2-titre">
+            <span class="plan-flag" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.5-5 4.3 1.6 6.4L12 16.8 5.9 19.2l1.6-6.4-5-4.3 6.6-.5z"/></svg>
+              Recommandé
+            </span>
+            <p class="plan-name" id="plan2-titre">Je passe à l'action</p>
+            <p class="plan-price">29&#8239;<span class="cur">€</span></p>
+            <p class="plan-tag">Le plus choisi&nbsp;: comprendre <em>et</em> agir.</p>
+            <ul class="checks">
+              <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span><span class="plan-base">Tout ce que contient l'offre à 14&nbsp;€</span></li>
+              <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span><span>10 courriers pré-remplis, prêts à envoyer</span></li>
+              <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span><span>Un kit pour préparer vos rendez-vous</span></li>
+              <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span><span>Un calendrier de vos démarches sur 12 mois</span></li>
+              <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span><span>La checklist des pièces à fournir</span></li>
+            </ul>
+            <a class="btn btn--primary btn--block" href="https://jalons-diagnostic.netlify.app?offre=2">Choisir cette offre</a>
+          </article>
+
+          <!-- Palier 3 -->
+          <article class="plan" aria-labelledby="plan3-titre">
+            <p class="plan-name" id="plan3-titre">Je me bats pour mes droits</p>
+            <p class="plan-price">49&#8239;<span class="cur">€</span></p>
+            <p class="plan-tag">Pour contester un refus, étape par étape.</p>
+            <ul class="checks">
+              <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span><span class="plan-base">Tout ce que contient l'offre à 29&nbsp;€</span></li>
+              <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span><span>L'analyse des raisons de votre refus</span></li>
+              <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span><span>Votre recours (RAPO) complet, pré-rédigé</span></li>
+              <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span><span>Un argumentaire médical à transmettre</span></li>
+              <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span><span>La saisine du Défenseur des droits, expliquée</span></li>
+            </ul>
+            <a class="btn btn--outline btn--block" href="https://jalons-diagnostic.netlify.app?offre=3">Choisir cette offre</a>
+          </article>
+        </div>
+
+        <p class="pricing-foot">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+          Paiement sécurisé par Stripe · Aucun abonnement caché
+        </p>
+      </div>
+    </section>
+
+    <!-- ===============================================================
+         TÉMOIGNAGES (preuve sociale)
+         =============================================================== -->
+    <section class="section--gray" aria-labelledby="temoignages-titre">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow">Ils sont passés par là</p>
+          <h2 id="temoignages-titre">Des familles que Jalons a aidées à y voir clair.</h2>
+        </div>
+
+        <div class="grid grid-3">
+          <figure class="quote-card">
+            <blockquote>« J'avais reçu un refus que je ne comprenais pas. Jalons m'a expliqué pourquoi et préparé le recours. »</blockquote>
+            <p class="quote-result">Recours accepté : l'AAH de mon fils a été accordée.</p>
+            <figcaption class="quote-person">
+              <span class="avatar-mono avatar-mono--a" aria-hidden="true">S</span>
+              <span class="who">Sophie<small>Maman d'un enfant en situation de handicap</small></span>
+            </figcaption>
+          </figure>
+
+          <figure class="quote-card">
+            <blockquote>« Je ne savais même pas que j'avais droit à certaines aides. En 3 minutes, j'ai eu une vraie liste claire. »</blockquote>
+            <p class="quote-result">Plusieurs aides identifiées, à demander dès ce mois-ci.</p>
+            <figcaption class="quote-person">
+              <span class="avatar-mono avatar-mono--b" aria-hidden="true">K</span>
+              <span class="who">Karim<small>Aidant de son père âgé</small></span>
+            </figcaption>
+          </figure>
+
+          <figure class="quote-card">
+            <blockquote>« Les courriers étaient déjà écrits, je n'avais qu'à les signer. Ça m'a enlevé un poids énorme. »</blockquote>
+            <p class="quote-result">Dossier déposé en une après-midi, au lieu de plusieurs semaines.</p>
+            <figcaption class="quote-person">
+              <span class="avatar-mono avatar-mono--a" aria-hidden="true">N</span>
+              <span class="who">Nadia<small>En arrêt de travail longue durée</small></span>
+            </figcaption>
+          </figure>
+        </div>
+        <p class="center mt-3" style="color:var(--ink-soft); font-size:var(--fs-small);">Témoignages illustratifs. Les résultats dépendent de chaque situation.</p>
+      </div>
+    </section>
+
+    <!-- ===============================================================
+         FAQ (accordéon accessible)
+         =============================================================== -->
+    <section id="faq" aria-labelledby="faq-titre">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow">Questions fréquentes</p>
+          <h2 id="faq-titre">Ce que vous vous demandez sûrement.</h2>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Est-ce un conseil juridique ?
+              <span class="chev" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+            </summary>
+            <div class="answer"><p>Non. Jalons est une aide à l'orientation&nbsp;: il vous explique vos droits possibles et prépare vos démarches. Il ne remplace pas un avocat ni un professionnel du droit pour les situations complexes.</p></div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Mes données sont-elles protégées ?
+              <span class="chev" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+            </summary>
+            <div class="answer"><p>Oui. Vos informations sont chiffrées, conservées en France et ne sont jamais revendues. Vous pouvez demander leur suppression à tout moment. Le sujet est sensible&nbsp;: nous le traitons avec le plus grand soin.</p></div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Combien de temps pour recevoir mon document ?
+              <span class="chev" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+            </summary>
+            <div class="answer"><p>L'accès est immédiat. Une fois le questionnaire rempli et le paiement effectué, votre document personnalisé est disponible tout de suite.</p></div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Et si je ne suis pas satisfait ?
+              <span class="chev" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+            </summary>
+            <div class="answer"><p>Écrivez-nous&nbsp;: si Jalons ne vous a pas été utile, nous étudions votre demande de remboursement. Notre but est de vous aider, pas de vous laisser sur le bord du chemin.</p></div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Est-ce que ça remplace une assistante sociale ?
+              <span class="chev" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+            </summary>
+            <div class="answer"><p>Non, et ce n'est pas son rôle. Jalons vous fait gagner du temps et vous prépare. Pour un suivi personnalisé, il vous oriente aussi vers les bons interlocuteurs&nbsp;: travailleur social, association, professionnel du droit.</p></div>
+          </details>
+        </div>
+
+        <div class="center mt-3">
+          <a class="btn btn--primary btn--lg" href="https://jalons-diagnostic.netlify.app">Commencer mon diagnostic →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =================================================================
+       PIED DE PAGE
+       ================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="#" aria-label="Jalons, accueil">
+            <span class="mark" aria-hidden="true">J</span>
+            <span>Jalons</span>
+          </a>
+          <p>Comprenez vos droits sociaux et sachez quoi faire, simplement, sans jargon.</p>
+        </div>
+
+        <nav class="footer-col" aria-label="Le service">
+          <h2>Le service</h2>
+          <ul>
+            <li><a href="#comment">Comment ça marche</a></li>
+            <li><a href="#tarifs">Tarifs</a></li>
+            <li><a href="#faq">Questions fréquentes</a></li>
+            <li><a href="https://jalons-diagnostic.netlify.app">Mon diagnostic</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col" aria-label="Informations légales">
+          <h2>Informations</h2>
+          <ul>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+            <li><a href="confidentialite.html">Politique de confidentialité (RGPD)</a></li>
+            <li><a href="contact.html">Nous contacter</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <p class="footer-disclaimer">
+        Jalons est une aide à l'orientation dans les droits sociaux. Il ne
+        remplace pas l'analyse d'un professionnel du droit ou du travail social,
+        et ne garantit pas l'attribution d'une aide. Les montants indiqués sont
+        des estimations.
+      </p>
+      <p class="footer-bottom">© 2026 Jalons. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- =================================================================
+       SCRIPT — ouverture/fermeture du menu mobile (accessible)
+       La FAQ utilise <details>/<summary> : aucun JS requis.
+       ================================================================= -->
+  <script src="js/menu.js"></script>
+</body>
+</html>

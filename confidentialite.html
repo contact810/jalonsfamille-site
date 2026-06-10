@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Politique de confidentialité — Jalons</title>
+  <meta name="description" content="Comment Jalons protège vos données personnelles et de santé, dans le respect du RGPD." />
+  <meta name="robots" content="noindex" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/jalons.css" />
+</head>
+
+<!--
+  ============================================================================
+  À FAIRE AVANT PUBLICATION (confidentialité / RGPD) — ne pas publier en l'état :
+  - DONNÉES SENSIBLES : Jalons traite des données de santé et de handicap (art. 9 RGPD).
+    Le traitement repose sur le CONSENTEMENT EXPLICITE -> ajouter une case à cocher
+    dédiée AVANT le questionnaire, NON pré-cochée. Sans ça, le traitement est illicite.
+  - Accepter le DPA Anthropic (Console) et vérifier le DPA Stripe (contrat Stripe).
+    Sans ces DPA, la chaîne de sous-traitance n'est pas valable.
+  - Compléter l'adresse du siège.
+  - Conservation : version actuelle = produit "stateless" (rien conservé durablement).
+    À RÉÉCRIRE entièrement avec des durées précises si le "Dossier Vivant" (compte client) arrive.
+  - Cookies : texte actuel = "strictement nécessaires" uniquement. À revoir si ajout
+    d'un jour de mesure d'audience / tracking (bandeau de consentement CNIL obligatoire).
+  - Faire relire par un juriste (non optionnel sur données sensibles).
+  ============================================================================
+-->
+
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Jalons, accueil">
+        <span class="mark" aria-hidden="true">J</span>
+        <span>Jalons</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span class="bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="label">Menu</span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+        <ul class="nav-list">
+          <li><a href="index.html#comment">Comment ça marche</a></li>
+          <li><a href="index.html#tarifs">Tarifs</a></li>
+          <li><a href="index.html#faq">Questions fréquentes</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a class="btn btn--primary" href="https://jalons-diagnostic.netlify.app">Mon diagnostic</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Politique de confidentialité</h1>
+        <p>Vos données, surtout celles qui touchent à votre santé, méritent le plus grand soin. Voici comment nous les traitons.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="prose">
+          <p class="updated">Dernière mise à jour : 10 juin 2026</p>
+
+          <h2>1. Responsable du traitement</h2>
+          <p>Le responsable du traitement est la SASU Jalons Famille, 60 avenue de la Grande Armée, 75017 Paris, représentée par Valentin Dubois. Pour toute question relative à vos données : <a href="mailto:contact@jalonsfamille.fr">contact@jalonsfamille.fr</a>.</p>
+
+          <h2>2. Quelles données nous collectons</h2>
+          <p>Pour générer votre diagnostic, nous collectons les informations que vous saisissez vous-même dans le questionnaire :</p>
+          <ul>
+            <li>données d'identification : prénom, département de résidence ;</li>
+            <li>données de situation : composition familiale, logement, niveau de revenus ;</li>
+            <li>données sensibles (santé / handicap) : informations sur une maladie, un handicap, une situation d'invalidité ou de dépendance, lorsque vous les renseignez ;</li>
+            <li>données de paiement : collectées et traitées directement par Stripe (nous ne voyons jamais votre numéro de carte) ;</li>
+            <li>adresse e-mail : transmise lors du paiement pour l'envoi de votre document.</li>
+          </ul>
+          <p>Les données de santé et de handicap sont des données sensibles au sens de l'article 9 du RGPD. Nous ne les traitons que sur la base de votre consentement explicite, recueilli avant le questionnaire, et dans le seul but de produire votre diagnostic.</p>
+
+          <h2>3. Pourquoi nous les utilisons</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Finalité</th><th>Base légale (RGPD)</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Générer votre diagnostic personnalisé</td><td>Exécution du contrat (art. 6.1.b)</td></tr>
+                <tr><td>Traiter les données de santé / handicap nécessaires au diagnostic</td><td>Consentement explicite (art. 9.2.a)</td></tr>
+                <tr><td>Encaisser le paiement</td><td>Exécution du contrat (art. 6.1.b)</td></tr>
+                <tr><td>Respecter nos obligations comptables et fiscales</td><td>Obligation légale (art. 6.1.c)</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Vos données ne sont jamais utilisées à des fins publicitaires ni revendues.</p>
+
+          <h2>4. Combien de temps nous les conservons</h2>
+          <!-- À CONFIRMER : version "stateless" par défaut. À réécrire avec des durées précises si "Dossier Vivant" (compte client). -->
+          <ul>
+            <li>Données du questionnaire et document généré : non conservés de manière durable. Le document est produit puis transmis ; il n'est pas archivé sur nos serveurs au-delà du temps technique nécessaire à sa génération et à son envoi.</li>
+            <li>Données de facturation : conservées 10 ans, conformément aux obligations comptables (art. L.123-22 du Code de commerce).</li>
+            <li>E-mail de contact : conservé le temps de répondre à votre demande, puis au plus tard 3 ans après notre dernier contact, conformément aux recommandations de la CNIL.</li>
+          </ul>
+
+          <h2>5. Qui a accès à vos données (sous-traitants)</h2>
+          <p>Pour fonctionner, Jalons fait appel à des prestataires techniques qui agissent comme sous-traitants au sens du RGPD. Certains traitent des données en dehors de l'Union européenne ; ces transferts sont alors encadrés par les clauses contractuelles types de la Commission européenne (CCT).</p>
+          <!-- VÉRIFIER : DPA Anthropic accepté (Console) + DPA Stripe (contrat Stripe). Sinon chaîne de sous-traitance non valable. -->
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Sous-traitant</th><th>Rôle</th><th>Localisation</th><th>Encadrement</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Anthropic (API Claude)</td>
+                  <td>Génération du document par IA</td>
+                  <td>États-Unis (AWS)</td>
+                  <td>DPA + clauses contractuelles types. Le contenu transmis n'est pas utilisé pour entraîner les modèles et n'est pas conservé durablement (une rétention technique temporaire, jusqu'à 30 jours, peut s'appliquer à des fins de sécurité).</td>
+                </tr>
+                <tr>
+                  <td>Stripe</td>
+                  <td>Traitement du paiement</td>
+                  <td>UE (Stripe Payments Europe), transferts possibles vers les États-Unis</td>
+                  <td>DPA + clauses contractuelles types + EU-U.S. Data Privacy Framework. Certifié PCI-DSS niveau 1.</td>
+                </tr>
+                <tr>
+                  <td>Netlify</td>
+                  <td>Hébergement de l'application</td>
+                  <td>États-Unis</td>
+                  <td>DPA + clauses contractuelles types.</td>
+                </tr>
+                <tr>
+                  <td>OVH</td>
+                  <td>Hébergement du site vitrine</td>
+                  <td>France / UE</td>
+                  <td>Sous-traitant établi dans l'UE.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2>6. Vos droits</h2>
+          <p>Conformément au RGPD, vous disposez des droits suivants : accès, rectification, effacement, limitation, opposition, portabilité, et retrait de votre consentement à tout moment.</p>
+          <p>Pour les exercer, écrivez à <a href="mailto:contact@jalonsfamille.fr">contact@jalonsfamille.fr</a>. Nous répondons dans un délai d'un mois.</p>
+          <p>Vous pouvez également introduire une réclamation auprès de la CNIL : <a href="https://www.cnil.fr">www.cnil.fr</a> — 3 place de Fontenoy, TSA 80715, 75334 Paris Cedex 07.</p>
+
+          <h2>7. Cookies</h2>
+          <!-- Texte actuel = uniquement cookies strictement nécessaires. À revoir + bandeau CNIL si ajout de mesure d'audience / tracking. -->
+          <p>Ce site utilise uniquement des cookies strictement nécessaires à son fonctionnement et au traitement sécurisé des paiements. Ces cookies ne nécessitent pas votre consentement préalable et ne servent à aucun suivi publicitaire.</p>
+
+          <h2>8. Sécurité</h2>
+          <p>Nous mettons en oeuvre des mesures techniques pour protéger vos données : chiffrement des communications (HTTPS/TLS), clés d'API conservées uniquement côté serveur, et minimisation des données collectées.</p>
+
+          <p style="margin-top:2.5rem;">Une question sur vos données ? <a href="contact.html">Écrivez-nous</a>.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Jalons, accueil">
+            <span class="mark" aria-hidden="true">J</span>
+            <span>Jalons</span>
+          </a>
+          <p>Comprenez vos droits sociaux et sachez quoi faire, simplement, sans jargon.</p>
+        </div>
+
+        <nav class="footer-col" aria-label="Le service">
+          <h2>Le service</h2>
+          <ul>
+            <li><a href="index.html#comment">Comment ça marche</a></li>
+            <li><a href="index.html#tarifs">Tarifs</a></li>
+            <li><a href="index.html#faq">Questions fréquentes</a></li>
+            <li><a href="https://jalons-diagnostic.netlify.app">Mon diagnostic</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col" aria-label="Informations légales">
+          <h2>Informations</h2>
+          <ul>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+            <li><a href="confidentialite.html">Politique de confidentialité (RGPD)</a></li>
+            <li><a href="contact.html">Nous contacter</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <p class="footer-disclaimer">
+        Jalons est une aide à l'orientation dans les droits sociaux. Il ne
+        remplace pas l'analyse d'un professionnel du droit ou du travail social,
+        et ne garantit pas l'attribution d'une aide. Les montants indiqués sont
+        des estimations.
+      </p>
+      <p class="footer-bottom">© 2026 Jalons Famille. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>
